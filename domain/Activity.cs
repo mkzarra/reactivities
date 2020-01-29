@@ -1,6 +1,6 @@
 using System;
 
-namespace domain
+namespace Domain
 {
     public class Activity
     {

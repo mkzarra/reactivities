@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using domain;
+using Domain;
 
-namespace persistence
+namespace Persistence
 {
     public class Seed
     {
@@ -11,7 +11,7 @@ namespace persistence
         {
             if(!context.Activities.Any())
             {
-                var activities = new List<Activity>
+                var Activities = new List<Activity>
                 {
                     new Activity
                     {
@@ -105,7 +105,7 @@ namespace persistence
                     }
                 };
                 
-                context.Activities.AddRange(activities);
+                context.Activities.AddRange(Activities);
                 context.SaveChanges();
             }
         }
